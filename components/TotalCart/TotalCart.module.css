@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 50px;
+}
+
+.value,
+.delivery,
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.total {
+  margin-top: 15px;
+}
+
+.checkout,
+.continue_shopping {
+  outline: none;
+  background: #2c241d;
+  color: #eee;
+  padding: 20px 10px;
+  border: none;
+  margin-top: 15px;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.continue_shopping {
+  background: #fff;
+  border: 1px solid #2c241d;
+  color: #2c241d;
+  cursor: pointer;
+}

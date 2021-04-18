@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3efeb;
+}
+
+.header_page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: url("../../assets/bg-pages.jpg");
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_page .bread_crumb {
+  color: #f3efeb;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.header_page .bread_crumb span {
+  color: #fbad4a;
+  font-size: 0.9em;
+}
+
+.header_page .title_page {
+  color: #f3efeb;
+  font-size: max(50px, 5vw);
+  font-family: "Playfair Display", serif;
+}
+
+.grid_products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto 0;
+  padding: 0 20px 80px;
+}
+
+.grid_products .product {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  position: relative;
+}
+
+.new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  padding: 3px 10px;
+  background: #f3efeb;
+  border: 3px solid #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.grid_products .product .name_and_price {
+  padding: 20px 0;
+}
+
+.grid_products .product h2 {
+  font-family: serif;
+  font-size: 1.1em;
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .grid_products {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+}
